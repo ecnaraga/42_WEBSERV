@@ -1,6 +1,6 @@
 # 42_WEBSERV
 
-Goal
+Goal (2 people team project)
 
     - Mandatory : Write a mini http server in C++98. Implement the followings :
       - Return the right HTTP response status code
