@@ -3,18 +3,21 @@
 Goal
 
     - Mandatory : Write a mini http server in C++98. Implement the followings :
-      - Right HTTP response status code
-      - Default error pages
-      - handle pipes
-      - handle environment variables and $?
-      - handle SIGINT, SIGQUIT and EOF like in bash
-      - implements builtins (cd with relative or absolute path, echo and option -n, export no options, exit no options, env no options, pwd no options, unset no options) 
-    - Bonus : Implement && and || operators, and wildcards for current directory
+      - Return the right HTTP response status code
+      - Default error pages if none is provided
+      - Has to be abble to serve a static website
+      - Upload files
+      - Implement GET POST and DELETE methods
+      - Server should never die
+      - Listen to multi ports
+      - Multi server block in configuration file possible
+      - Directory listing
+      - CGI
+    - Bonus : Support Cookies and Session management, handle multiple CGI
     
 Launch
 
     - Compile with the makefile
-    
     -  launch ./webserv <configuration.conf>
     
 Authorized functions
@@ -29,4 +32,3 @@ Authorized functions
     - select, poll, epoll (epoll_create, epoll_ctl, epoll_wait)
     - strerrorr, gai_strerror, errno
     - Everything in C++98
-
